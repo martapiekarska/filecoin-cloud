@@ -15,7 +15,7 @@ import { PATHS } from '@/constants/paths'
 import { FOC_URLS } from '@/constants/site-metadata'
 import {
   WARM_VS_COLD_COLUMN_LABELS,
-  warmVsColdComparison,
+  WARM_VS_COLD_COMPARISON,
 } from '@/constants/warm-vs-cold-comparison'
 import { createMetadata } from '@/utils/create-metadata'
 
@@ -115,8 +115,8 @@ export default function ColdStorageService() {
         >
           <ComparisonTable
             caption="Comparison of Filecoin Warm Storage and Filecoin Cold Storage"
-            columnLabels={[...WARM_VS_COLD_COLUMN_LABELS]}
-            rows={warmVsColdComparison}
+            columnLabels={WARM_VS_COLD_COLUMN_LABELS}
+            rows={WARM_VS_COLD_COMPARISON}
           />
         </SectionContent>
       </PageSection>

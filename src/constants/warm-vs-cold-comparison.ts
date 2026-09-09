@@ -4,7 +4,7 @@ export const WARM_VS_COLD_COLUMN_LABELS = [
   'Filecoin Cold Storage (FCSS)',
 ] as const
 
-export const warmVsColdComparison = [
+export const WARM_VS_COLD_COMPARISON = [
   {
     dimension: 'Proof mechanism',
     first: 'Proof of Data Possession (PDP) — continuous, lightweight proofs',
@@ -14,8 +14,7 @@ export const warmVsColdComparison = [
   {
     dimension: 'Pricing',
     first: 'From $2.50/TiB/month per copy (2-copy minimum)',
-    second:
-      'Marketplace-quoted per provider — PoRep is sealed once rather than re-proven every period like PDP, so cost per TiB is typically lower for large, rarely-accessed data',
+    second: 'From $2/TiB/month, 1 copy',
   },
   {
     dimension: 'Access pattern',

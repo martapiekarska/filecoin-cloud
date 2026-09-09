@@ -1,6 +1,6 @@
 type ComparisonTableProps = {
   caption?: string
-  columnLabels: [dimension: string, first: string, second: string]
+  columnLabels: readonly [dimension: string, first: string, second: string]
   rows: ReadonlyArray<{
     dimension: string
     first: string
@@ -21,13 +21,22 @@ export function ComparisonTable({
         {caption && <caption className="sr-only">{caption}</caption>}
         <thead>
           <tr className="border-b border-(--color-border-muted)">
-            <th className="p-5 font-medium text-(--color-paragraph-text)">
+            <th
+              scope="col"
+              className="p-5 font-medium text-(--color-paragraph-text)"
+            >
               {dimensionLabel}
             </th>
-            <th className="p-5 font-medium text-(--color-paragraph-text)">
+            <th
+              scope="col"
+              className="p-5 font-medium text-(--color-paragraph-text)"
+            >
               {firstLabel}
             </th>
-            <th className="p-5 font-medium text-(--color-paragraph-text)">
+            <th
+              scope="col"
+              className="p-5 font-medium text-(--color-paragraph-text)"
+            >
               {secondLabel}
             </th>
           </tr>

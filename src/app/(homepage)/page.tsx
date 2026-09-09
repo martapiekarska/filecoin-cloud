@@ -125,7 +125,7 @@ export default function Homepage() {
         >
           <ComparisonTable
             caption="Comparison of traditional cloud storage and Filecoin Onchain Cloud"
-            columnLabels={[...WHY_FOC_COLUMN_LABELS]}
+            columnLabels={WHY_FOC_COLUMN_LABELS}
             rows={whyFocComparison}
           />
         </SectionContent>

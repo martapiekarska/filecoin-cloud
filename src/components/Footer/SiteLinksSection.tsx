@@ -13,8 +13,14 @@ const footerLinkColumns: ReadonlyArray<FooterLinkColumn> = [
     title: 'Product',
     links: [
       { label: PATHS.STORE.label, href: PATHS.STORE.path },
-      { label: 'Warm Storage', href: PATHS.WARM_STORAGE_SERVICE.path },
-      { label: 'Cold Storage', href: PATHS.COLD_STORAGE_SERVICE.path },
+      {
+        label: PATHS.WARM_STORAGE_SERVICE.label,
+        href: PATHS.WARM_STORAGE_SERVICE.path,
+      },
+      {
+        label: PATHS.COLD_STORAGE_SERVICE.label,
+        href: PATHS.COLD_STORAGE_SERVICE.path,
+      },
       { label: 'Filecoin Pay', href: FOC_URLS.filecoinPay },
       { label: 'Filecoin Beam', href: FIL_BEAM_URL },
     ],

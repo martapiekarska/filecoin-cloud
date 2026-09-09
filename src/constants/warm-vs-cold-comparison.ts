@@ -12,6 +12,12 @@ export const warmVsColdComparison = [
       'Proof of Replication (PoRep) — sealed at write time, onchain-verified',
   },
   {
+    dimension: 'Pricing',
+    first: 'From $2.50/TiB/month per copy (2-copy minimum)',
+    second:
+      'Marketplace-quoted per provider — PoRep is sealed once rather than re-proven every period like PDP, so cost per TiB is typically lower for large, rarely-accessed data',
+  },
+  {
     dimension: 'Access pattern',
     first: 'Hot — fast retrieval for actively-used data',
     second: 'Cold — archival, for infrequently-accessed data',

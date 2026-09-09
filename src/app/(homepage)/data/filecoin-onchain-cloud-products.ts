@@ -4,22 +4,36 @@ import { PATHS } from '@/constants/paths'
 import { FIL_BEAM_URL, FOC_URLS } from '@/constants/site-metadata'
 import aurora from '@/public/assets/aurora.webp'
 import spaceStation from '@/public/assets/space-station.webp'
+import spiralGalaxy from '@/public/assets/spiral-galaxy.webp'
 import stellarExplosionNebula from '@/public/assets/stellar-explosion-nebula.webp'
 
 const CTA_TEXT = 'Learn more'
 
 export const filecoinOnchainCloudProducts: Array<SimpleCardWithImageProps> = [
   {
-    title: 'Storage Marketplace',
+    title: 'Filecoin Warm Storage',
     description:
-      'Warm storage for active data and cold storage for large archives, both verified onchain and settled through Filecoin Pay. Compare Filecoin Warm Storage and Filecoin Cold Storage and pick the fit for your data.',
+      'Fast, continuously-verified storage for active data. Powered by onchain contracts for storage and payments.',
     cta: {
-      href: PATHS.STORE.path,
+      href: PATHS.WARM_STORAGE_SERVICE.path,
       text: CTA_TEXT,
     },
     image: {
       data: spaceStation,
       alt: "International Space Station illuminated by sunlight above Earth's horizon in space.",
+    },
+  },
+  {
+    title: 'Filecoin Cold Storage',
+    description:
+      'Low-cost, durable archival storage for large, infrequently-accessed datasets. Sealed and proven with Proof of Replication (PoRep).',
+    cta: {
+      href: PATHS.COLD_STORAGE_SERVICE.path,
+      text: CTA_TEXT,
+    },
+    image: {
+      data: spiralGalaxy,
+      alt: 'Spiral galaxy with bright core and sweeping arms of stars on a deep space background.',
     },
   },
   {

@@ -9,7 +9,28 @@ import { FOC_URLS } from '@/constants/site-metadata'
 export const headerNavigationItems: Array<NavItem | NavigationMenuItem> = [
   {
     label: PATHS.STORE.label,
-    href: PATHS.STORE.path,
+    items: [
+      {
+        title: 'Store',
+        links: [
+          {
+            description: 'The Filecoin storage marketplace, explained',
+            label: 'Overview',
+            href: PATHS.STORE.path,
+          },
+          {
+            description: 'Fast, continuously-verified storage for active data',
+            label: PATHS.WARM_STORAGE_SERVICE.label,
+            href: PATHS.WARM_STORAGE_SERVICE.path,
+          },
+          {
+            description: 'Low-cost archival storage for large datasets',
+            label: PATHS.COLD_STORAGE_SERVICE.label,
+            href: PATHS.COLD_STORAGE_SERVICE.path,
+          },
+        ],
+      },
+    ],
   },
   {
     label: 'Resources',
@@ -58,6 +79,14 @@ export const mobileNavigationItems: Array<NavItem> = [
   {
     label: PATHS.STORE.label,
     href: PATHS.STORE.path,
+  },
+  {
+    label: PATHS.WARM_STORAGE_SERVICE.label,
+    href: PATHS.WARM_STORAGE_SERVICE.path,
+  },
+  {
+    label: PATHS.COLD_STORAGE_SERVICE.label,
+    href: PATHS.COLD_STORAGE_SERVICE.path,
   },
   {
     label: PATHS.SHOWCASE.label,

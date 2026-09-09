@@ -137,7 +137,7 @@ export default function Homepage() {
           title="Two ways to integrate Warm Storage"
           description="Both are entry points into the same Filecoin Warm Storage Service (FWSS) — pick the one that matches your workflow."
         >
-          <CardGrid as="ul" variant="smTwoLgThreeWider">
+          <CardGrid as="ul" variant="mdTwo">
             {warmStorageIntegrations.map(({ title, description, icon }) => (
               <Card
                 key={title}
@@ -184,7 +184,7 @@ export default function Homepage() {
           title="Compose the Building Blocks"
           description="Modular services you can mix, match, and deploy, all built for openness, performance, and control."
         >
-          <CardGrid as="ul" variant="smTwoLgThreeWider">
+          <CardGrid as="ul" variant="mdTwo">
             {filecoinOnchainCloudProducts.map(
               ({ title, description, cta, image }) => (
                 <SimpleCardWithImage

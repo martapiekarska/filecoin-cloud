@@ -62,7 +62,7 @@ export default function Store() {
           headingTag="h2"
           title="Two storage services, one marketplace"
         >
-          <CardGrid as="ul" variant="smTwoLgThreeWider">
+          <CardGrid as="ul" variant="mdTwo">
             {storeOfferings.map(({ title, description, cta, image }) => (
               <SimpleCardWithImage
                 key={title}

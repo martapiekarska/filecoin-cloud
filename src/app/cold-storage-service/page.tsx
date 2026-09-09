@@ -92,7 +92,7 @@ export default function ColdStorageService() {
           title="Who it's for"
           description="FCSS is built for datasets of 1TiB and up, where cost per TiB and durability matter more than retrieval speed."
         >
-          <CardGrid as="ul" variant="smTwoLgThreeWider">
+          <CardGrid as="ul" variant="mdTwo">
             {coldStorageAudience.map(({ title, description, icon }) => (
               <Card
                 key={title}
